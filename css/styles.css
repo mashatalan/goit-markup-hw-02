@@ -1,0 +1,216 @@
+:root {
+    --ff-primary: 'Roboto', sans-serif;
+    --ff-secondary: "Raleway", sans-serif;
+    --ff-logo: "Oleo Script", cursiv;
+    --bc-dark: #2F303A;
+    --bc-light: #F5F4FA;
+    --bc-primary: #E5E5E5;
+    --color-primary: #757575;
+    --color-dark: #212121;
+    --color-light: #FFFFFF;
+    --bc-accent: #424242;
+    --color-accent: #2196F3;
+    --focus-button: #188CE8;
+}
+
+body {
+    font-family: var(--ff-primary);
+    font-size: 14px;
+    color: var(--color-dark);
+}
+
+/* Typography */
+.h2 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.17;
+    text-align: center;
+}
+
+.h3 {
+    font-weight: 700;
+    line-height: 1.14;
+    text-align: center;
+}
+
+.p {
+    color: var(--color-primary);
+    text-align: left;
+    font-weight: 400;
+}
+
+/*=== Forms ===*/
+.button {
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: var(--ff-primary);
+    text-align: center;
+}
+
+/*=== Lists, links ===*/
+.list {
+    list-style: none;
+}
+
+.link,
+.link:visited {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*=== Header ===*/
+.logo {
+    font-family: var(--ff-secondary);
+    color: var(--color-dark);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-align: left;
+}
+
+.logo span {
+    color: var(--color-accent);
+}
+
+.nav-list list {
+    font-weight: 500;
+    line-height: 1.14;
+}
+
+.header .link:hover,
+.header .link:focus {
+    color: var(--color-accent);
+}
+
+.nav-list-link,
+.nav-list-link:visited {
+    font-weight: 500;
+    line-height: 1.14;
+    color: var(--color-dark);
+}
+
+.contact-list-item .link {
+    color: var(--color-primary);
+    font-weight: 600;
+    line-height: 1.14;
+}
+
+/*=== End of Header ===*/
+
+/*=== Footer ===*/
+.footer {
+    background-color: var(--bc-dark);
+}
+
+.logo-bottom {
+    color: var(--color-light);
+}
+
+.footer .list .link,
+.footer .list .link:visited {
+    font-weight: 400;
+    line-height: 1.71;
+    color: var(--color-dark);
+}
+
+.footer .list .link {
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+}
+
+.footer .list li:first-child .link {
+    color: var(--color-light);
+}
+
+.footer .list li:first-child .link:focus,
+.footer .list li:first-child .link:hover,
+.footer .link:focus,
+.footer .link:hover {
+    color: var(--color-accent);
+}
+
+/*=== End of Footer ===*/
+
+/*=== Hero ===*/
+.hero {
+    background-color: var(--bc-dark);
+    text-align: center;
+}
+
+.hero h1 {
+    color: var(--color-light);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+}
+
+.hero button {
+    color: var(--color-light);
+    background-color: var(--color-accent);
+    font-weight: 700;
+    line-height: 1.88;
+}
+
+.hero button:hover,
+.hero button:focus {
+    background-color: var(--focus-button);
+}
+
+/*=== End of Hero ===*/
+
+/*=== Benefits ===*/
+.benefits h3 {
+    text-align: left;
+}
+
+.benefits p {
+    line-height: 1.71;
+}
+
+/*=== End of Benefits ===*/
+
+/*=== Our Team ===*/
+.our-team {
+    background-color: var(--bc-light);
+}
+
+.our-team h3 {
+    font-size: 16px;
+}
+
+.our-team p {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}
+
+/*=== End of Team ===*/
+
+/*=== Portfolio ===*/
+.portfolio button {
+    background-color: var(--bc-light);
+    color: var(--color-dark);
+    font-weight: 500;
+    line-height: 1.63;
+}
+
+.portfolio button:hover,
+.portfolio button:focus {
+    background-color: var(--color-accent);
+    color: var(--color-light);
+}
+
+.portfolio h3 {
+    font-size: 18px;
+    line-height: 2;
+    text-align: left;
+}
+
+.portfolio p {
+    font-size: 16px;
+    line-height: 1.88;
+}
+
+/*=== End of Portfolio ===*/
