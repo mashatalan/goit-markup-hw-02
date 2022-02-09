@@ -17,34 +17,20 @@ body {
     font-family: var(--ff-primary);
     font-size: 14px;
     color: var(--color-dark);
-}
-
-/* Typography */
-.h2 {
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1.17;
-    text-align: center;
-}
-
-.h3 {
-    font-weight: 700;
-    line-height: 1.14;
-    text-align: center;
-}
-
-.p {
-    color: var(--color-primary);
-    text-align: left;
+    background-color: #FFFFFF;
+    font-style: normal;
+    letter-spacing: 0.03em;
 }
 
 /*=== Forms ===*/
 .button {
-    border: none;
-    border-radius: 4px;
+    font-weight: 700;
     font-size: 16px;
-    font-family: var(--ff-primary);
+    line-height: 30px;
+    align-items: center;
     text-align: center;
+    letter-spacing: 0.06em;
+    font-family: var(--ff-primary);
     cursor: pointer;
 }
 
@@ -54,27 +40,24 @@ body {
 }
 
 .link,
-.link:visited {
+.link {
     text-decoration: none;
 }
 
 /*=== Header ===*/
 .logo {
     font-family: var(--ff-secondary);
-    color: var(--color-dark);
-    font-weight: 700;
+    font-weight: bold;
     font-size: 26px;
-    line-height: 1.19;
-    text-align: left;
+    line-height: 31px;
 }
 
 .logo span {
     color: var(--color-accent);
 }
 
-.nav-list list {
-    font-weight: 500;
-    line-height: 1.14;
+.logo {
+    color: var(--color-dark);
 }
 
 .header .link:hover,
@@ -82,22 +65,24 @@ body {
     color: var(--color-accent);
 }
 
-.nav-list-link,
-.nav-list-link:visited {
+.nav-list-link {
     font-weight: 500;
-    line-height: 1.14;
+    line-height: 16px;
+    letter-spacing: 0.02em;
     color: var(--color-dark);
 }
 
 .contact-list-item .link {
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.02em;
     color: var(--color-primary);
-    font-weight: 600;
-    line-height: 1.14;
 }
 
 /*=== End of Header ===*/
 
 /*=== Footer ===*/
+
 .footer {
     background-color: var(--bc-dark);
 }
@@ -106,16 +91,18 @@ body {
     color: var(--color-light);
 }
 
-.footer .list .link,
-.footer .list .link:visited {
-    font-weight: 400;
-    line-height: 1.71;
-    color: var(--color-dark);
+.address {
+    font-style: normal;
+    font-weight: normal;
+    line-height: 24px;
+    color: var(--color-light);
 }
 
-.footer .list .link {
-    color: rgba(255, 255, 255, 0.6);
+.contact-list {
     font-style: normal;
+    font-weight: normal;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .footer .list li:first-child .link {
@@ -137,12 +124,14 @@ body {
     text-align: center;
 }
 
-.hero h1 {
+.hero .hero-title {
     color: var(--color-light);
     font-weight: 900;
     font-size: 44px;
-    line-height: 1.36;
+    line-height: 60px;
     text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
 }
 
 .hero button {
@@ -160,28 +149,60 @@ body {
 /*=== End of Hero ===*/
 
 /*=== Benefits ===*/
-.benefits h3 {
-    text-align: left;
+.benefits-title {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: var(--color-dark);
 }
 
-.benefits p {
-    line-height: 1.71;
+p {
+    color: var(--color-primary);
+}
+
+.list p {
+    color: var(--color-primary);
+    font-weight: normal;
+    line-height: 24px;
 }
 
 /*=== End of Benefits ===*/
+
+/*=== Our activities ===*/
+.activity-title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+}
+
+/*=== End of activity ===*/
+
 
 /*=== Our Team ===*/
 .our-team {
     background-color: var(--bc-light);
 }
 
-.our-team h3 {
-    font-size: 16px;
+.team-title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
 }
 
-.our-team p {
+.employees-name {
+    font-weight: 500;
     font-size: 16px;
-    line-height: 1.19;
+    line-height: 19px;
+    text-align: center;
+}
+
+.employees-position {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
     text-align: center;
 }
 
@@ -192,7 +213,10 @@ body {
     background-color: var(--bc-light);
     color: var(--color-dark);
     font-weight: 500;
-    line-height: 1.63;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.03em;
+    text-align: center;
 }
 
 .portfolio button:hover,
@@ -201,15 +225,19 @@ body {
     color: var(--color-light);
 }
 
-.portfolio h3 {
+.site-title {
+    font-weight: bold;
     font-size: 18px;
-    line-height: 2;
-    text-align: left;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+    color: var(--color-dark);
 }
 
-.portfolio p {
+.site-description {
+    font-weight: normal;
     font-size: 16px;
-    line-height: 1.88;
+    line-height: 30px;
+    color: var(--color-primary);
 }
 
 /*=== End of Portfolio ===*/
